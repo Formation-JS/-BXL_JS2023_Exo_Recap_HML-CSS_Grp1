@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    outline: 1px #00000005 solid;
+}
+
+@font-face {
+    font-family: Georgia, serif;
+    src: local(),
+    url();
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+
+
+/* CONTACTS */
+
+body {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+h1 {
+    font-size: 64px;
+    text-align: center;
+}
+
