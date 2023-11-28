@@ -6,6 +6,20 @@
 }
 
 @font-face {
+    font-family: "DisneyPark";
+    src: url(./assets/fonts/DisneyPark.woff);
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: "DisneyPark";
+    src: url(./assets/fonts/DisneyPark.woff2);
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
     font-family: Georgia, serif;
     src: local(),
     url();
@@ -60,7 +74,14 @@ body {
     width: 1200px;
 }
 
-h1 {
-    font-size: 64px;
+.contact-h1 {
     text-align: center;
+    color: white;
+    font-size: 7rem;
+    font-family: DisneyPark;
 }
+
+.inner_form-h2 {
+  color: white;
+}
+
