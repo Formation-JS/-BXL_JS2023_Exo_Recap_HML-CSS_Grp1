@@ -2,7 +2,7 @@
 
 * {
     margin: 0;
-    outline: 1px #00000005 solid;
+    outline: 1px #ffffff4e solid;
 }
 
 @font-face {
@@ -81,7 +81,30 @@ body {
     font-family: DisneyPark;
 }
 
-.inner_form-h2 {
+.contact-inner {
+  margin: 0 auto;
+}
+
+.contact-h2 {
   color: white;
+}
+
+.inner_contact-wrap {
+  display: flex;
+  justify-content: last baseline;
+  float: inline-start;
+  width: 50%;
+}
+
+.inner_contact-input {
+  width: 45%;
+}
+
+.inner_contact-textarea {
+  width: 99%;
+}
+
+.inner_contact-img {
+  width: 100%;
 }
 
