@@ -6,58 +6,70 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<header>
-  <nav>
-      <img class="logo" src="assets/img/Disney--logo.png" alt="Logo Disney--" id="logo">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="">Dashboard</a></li>
-      <li><a href="">Contact</a></li>
-    </ul>
-  </nav>
-</header>
 <body>
+    <header class="contact-container">
+      <nav>
+          <img class="logo" src="assets/img/Disney--logo.png" alt="Logo Disney--" id="logo">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">Dashboard</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <main class="contact-container">
         <h1 class="contact-h1">The Walt Disney Company</h1>
         <section>
-            <div class="contact-wrap">
+            <div class="contact-wrap contact_wrap-form">
                 <div class="contact-inner inner_contact">
                     <h2 class="contact-h2 inner_contact-h2">Contact with us</h2>
                     <div class="inner_contact-wrap">
-                        <form class="inner_contact-form" action="" method="get">
-                            <input class="inner_contact-input" type="text" placeholder="Your name">
-                            <input class="inner_contact-input" type="text" placeholder="Your email">
-                            <textarea class="inner_contact-textarea" name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-                            <input type="checkbox" name="" id="data">
-                            <label for="data">Agree to the terms of data processing</label>
-                            <input type="button" value="Send">
-                        </form>
-                    </div>
-                    <div class="inner_contact-wrap">
-                        <img class="inner_contact-img" src="./assets/img/service_img/disney-logo-for-contacts-page.png" alt="">
+                        <div class="inner_contact-inner">
+                            <form class="inner_contact-form" action="" method="get">
+                                <div class="inner_contact-inner">
+                                    <input class="inner_contact-input" type="text" placeholder="Your name">
+                                    <input class="inner_contact-input" type="text" placeholder="Your email">
+                                </div>
+                                <textarea class="inner_contact-textarea" name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+                                <input class="inner_contact-btn" type="button" value="Send">
+                                <input class="inner_contact-checkbox" type="checkbox" name="" id="data" checked>
+                                <label class="inner_contact-label" for="data">Agree to the terms of data processing</label>
+                            </form>
+                        </div>
+                        <div class="inner_contact-inner">
+                            <img class="inner_contact-img" src="./assets/img/service_img/disney-logo-for-contacts-page.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="contact_wrap">
-                <div class="contact_inner">
-                    <h2 class="contact-h2">Customer department</h2>
-                    <img src="./assets/img/service_img/icons8-telephone-50.png" alt="">
-                    <p>08:00 - 20:00 / Monday - Friday</p>
-                    <a href="tel:+0777889945">0777 / 88.99.45</a>
-                    <a href="tel:+0777889950">0777 / 88.99.50</a>
-                    <a href="mailto:client@disneyplus.com">customer@disneyplus.com</a>
+            <div class="contact-wrap contact_wrap-cards">
+                <div class="contact-inner contact_inner-cards">
+                    <div class="cards_inner-wrap">
+                        <h2 class="contact-h2 cards_inner-h2">Customer department</h2>
+                        <img class="cards_inner-img" src="./assets/img/service_img/icons8-telephone-50.png" alt="">
+                    </div>
+                    <p class="contact-text">08:00 - 20:00 / Monday - Friday</p>
+                    <a class="cards_inner-link" href="tel:+0777889945">0777 / 88.99.45</a>
+                    <a class="cards_inner-link" href="tel:+0777889950">0777 / 88.99.50</a>
+                    <a class="cards_inner-link" href="mailto:client@disneyplus.com">customer@disneyplus.com</a>
                 </div>
-                <div class="contact_inner">
-                    <h2 class="contact-h2">Technical department</h2>
-                    <img src="./assets/img/service_img/icons8-headphones-50.png" alt="">
-                    <p>06:00 - 19:00 / Monday - Sunday</p>
-                    <a href="tel:+0777889945">0777 / 88.99.55</a>
-                    <a href="mailto:technique@disneyplus.com">technical@disneyplus.com</a>
+                <div class="contact-inner contact_inner-cards">
+                    <div class="cards_inner-wrap">
+                        <h2 class="contact-h2 cards_inner-h2">Technical department</h2>
+                        <img class="cards_inner-img" src="./assets/img/service_img/icons8-headphones-50.png" alt="">
+                    </div>
+                    <p class="contact-text">06:00 - 19:00 / Monday - Sunday</p>
+                    <a class="cards_inner-link" href="tel:+0777889945">0777 / 88.99.55</a>
+                    <a class="cards_inner-link" href="mailto:technique@disneyplus.com">technical@disneyplus.com</a>
                 </div>
-                <div class="contact_inner">
-                    <h2 class="contact-h2">Our office</h2>
-                    <img src="./assets/img/service_img/icons8-building-50.png" alt="">
-                    <p>500 South Buena Vista Street Burbank, California, USA</p>
+                <div class="contact-inner contact_inner-cards">
+                    <div class="cards_inner-wrap">
+                        <h2 class="contact-h2 cards_inner-h2">Our offices</h2>
+                        <img class="cards_inner-img" src="./assets/img/service_img/icons8-building-50.png" alt="">
+                    </div>
+                    <p class="contact-text">500 South Buena Vista Street Burbank, California, USA</p>
+                    <p class="contact-text">25 quai Panhard-et-Levassor, Paris, France</p>
                 </div>
             </div>
         </section>
