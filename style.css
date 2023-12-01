@@ -1,84 +1,110 @@
 /* AUXILIARY AND SERVICE */
 
 * {
-    margin: 0;
-    outline: 1px #ffffff4e solid;
+  margin: 0;
+  /* outline: 1px #ffffff4e solid; */
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: "DisneyPark";
-    src: url(./assets/fonts/DisneyPark.woff);
-    font-style: normal; 
-    font-weight: normal; 
+  font-family: "DisneyPark";
+  src: url(./assets/fonts/DisneyPark.woff);
+  font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: "DisneyPark";
-    src: url(./assets/fonts/DisneyPark.woff2);
-    font-style: normal; 
-    font-weight: normal; 
+  font-family: "DisneyPark";
+  src: url(./assets/fonts/DisneyPark.woff2);
+  font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: Georgia, serif;
-    src: local(),
-    url();
-    font-style: normal; 
-    font-weight: normal; 
+  font-family: Georgia, serif;
+  src: local(), url();
+  font-style: normal;
+  font-weight: normal;
 }
 
 /* --------------------------------------------- */
 
-a{
-    text-decoration: none;
-    font-family: Georgia, serif;
-    font-size: 20px;
-    font-weight: 700;
-    color: whitesmoke;
-  }
-  a:hover {
-    color: rgb(26, 180, 207);
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    width: 100%;
-    margin-left: 20px;
-    margin-top: 30px;
-    overflow: hidden;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: end;
-    gap: 30px;
-    align-items: center;
-    list-style: none;
-    width: 50%;
-    margin-right: 30px;
-  }
-  body{
-    background: rgb(0,0,64);
-    background: linear-gradient(180deg, rgba(0,0,64,1) 0%, rgba(0,0,96,1) 50%, rgba(0,0,0,1) 100%);
-    overflow-x: hidden;
-  }
+a {
+  text-decoration: none;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+a:hover {
+  color: rgb(26, 180, 207);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  /* margin-left: 20px;
+  margin-top: 30px; */
+  overflow: hidden;
+}
+
+nav ul {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+  align-items: center;
+  list-style: none;
+  width: 50%;
+  /* margin-right: 30px; */
+}
+
+body {
+  background: rgb(0, 0, 64);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 64, 1) 0%,
+    rgba(0, 0, 96, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 
 
 /* CONTACTS */
 
 body {
-    margin: 0 auto;
-    width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
+  max-width: 1200px;
+}
+
+.contact-container {
+  padding: 0 50px;
+}
+
+
+header.contact-container {
+  margin: 0 0 50px 0;
+  padding: 0 50px 25px 50px;
+  border-bottom: 1px rgba(255, 255, 255, 0.55) solid;
 }
 
 .contact-h1 {
-    text-align: center;
-    color: white;
-    font-size: 7rem;
-    font-family: DisneyPark;
+  margin: 0 0 50px 0;
+  text-align: center;
+  color: white;
+  font-size: 7rem;
+  font-family: DisneyPark;
+}
+
+.contact-wrap:not(:last-child) {
+  margin: 0 0 50px 0;
 }
 
 .contact-inner {
@@ -86,25 +112,126 @@ body {
 }
 
 .contact-h2 {
+  margin: 0 0 15px 0;
   color: white;
 }
 
 .inner_contact-wrap {
   display: flex;
-  justify-content: last baseline;
-  float: inline-start;
-  width: 50%;
+  gap: 30px;
+}
+
+.inner_contact-inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 25px 0;
+  width: 100%;
+}
+
+.inner_contact-form {
+  width: 100%;
 }
 
 .inner_contact-input {
+  padding: 0 10px;
   width: 45%;
+  height: 50px;
+  background-color: #4c4e59aa;
+  border: none;
+  border-radius: 2px;
+  outline: 1px rgba(255, 255, 255, 0.55) solid;
+}
+
+.inner_contact-input::placeholder,
+.inner_contact-textarea::placeholder {
+  font-size: 13px;
+  font-family: "Georgia", serif;
+  font-weight: 100;
+  color: white;
+  opacity: 0.5;
 }
 
 .inner_contact-textarea {
-  width: 99%;
+  padding: 15px 10px;
+  margin: 0 0 25px 0;
+  width: 100%;
+  background-color: #4c4e59aa;
+  border: none;
+  border-radius: 2px;
+  outline: 1px rgba(255, 255, 255, 0.55) solid;
+  resize: none;
+}
+
+.inner_contact-btn {
+  margin: 0 0 25px 0;
+  width: 100%;
+  height: 50px;
+  background-color: #0072D2;
+  border: none;
+  border-radius: 2px;
+  font-family: "Georgia", serif;
+  font-weight: 100;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.inner_contact-label {
+  color: white;
 }
 
 .inner_contact-img {
   width: 100%;
 }
 
+.contact_wrap-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.contact_inner-cards {
+  flex: 1;
+  padding: 20px 20px;
+  width: 25%;
+  background-color: #4c4e59aa;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.cards_inner-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 25px 0;
+  padding: 0 0 15px 0;
+  height: 30%;
+  border-bottom: 1px rgba(255, 255, 255, 0.55) solid;
+}
+
+.cards_inner-h2 {
+  margin: 0 15px 0 0;
+  width: 100%;
+}
+
+.cards_inner-img {
+  width: 50px;
+  padding: 5px;
+  background-color: grey;
+  border-radius: 50px;
+}
+
+.contact-text {
+  margin: 0 0 25px 0;
+  color: white;
+  /* border: 1px rgba(255, 255, 255, 0.55) solid; */
+}
+
+.cards_inner-link {
+  display: block;
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  font-family: "Georgia", serif;
+  font-weight: 100;
+  color: grey;
+}
