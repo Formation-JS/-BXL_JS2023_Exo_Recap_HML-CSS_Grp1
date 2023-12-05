@@ -61,6 +61,14 @@ nav ul {
   /* margin-right: 30px; */
 }
 
+nav ul li a {
+  font-size: 24px;
+}
+
+.nav-burger {
+  display: none;
+}
+
 body {
   background: rgb(0, 0, 64);
   background: linear-gradient(
@@ -82,6 +90,7 @@ body {
   margin: 0 auto;
   padding: 30px 0;
   max-width: 1200px;
+  height: 100%;
 }
 
 .contact-container {
@@ -252,5 +261,37 @@ header.contact-container {
 
   .contact_inner-cards {
     min-width: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  .nav-burger {
+    display: block;
+  }
+
+  .contact-h1 {
+    font-size: 3rem;
+  }
+
+  .inner_contact-wrap {
+    flex-direction: column;
+  }
+
+  .inner_contact-inner:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact_wrap-cards {
+    flex-direction: column;
+  }
+
+  .contact_inner-cards {
+    min-width: 100%;
   }
 }
